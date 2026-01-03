@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Website</title>
+    <style>
+        /* ===== Global Styles ===== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        section {
+            padding: 80px 20px;
+            min-height: 100vh;
+        }
+
+        /* ===== Navbar ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar li {
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        /* ===== Hero ===== */
+        .hero {
+            background: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg") ;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+        }
+
+        /* ===== About ===== */
+        .about {
+            background: #f9f9f9;
+            text-align: center;
+        }
+        .about h2 {
+            margin-bottom: 20px;
+        }
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* ===== Services ===== */
+        .services {
+            text-align: center;
+        }
+        .services .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 250px;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="#home"><strong>MyWebsite</strong></a></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Simple one page layout with HTML & CSS</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            This is a clean and responsive one-page website template. You can customize any content,
+            images, colors, or add your own sections. Perfect for portfolios, small businesses, or personal landing pages.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Design</h3>
+                <p>Beautiful UI/UX design services that elevate your brand.</p>
+            </div>
+            <div class="card">
+                <h3>Development</h3>
+                <p>Responsive and modern web development solutions.</p>
+            </div>
+            <div class="card">
+                <h3>Marketing</h3>
+                <p>Grow your reach with smart marketing strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="about">
+        <h2>Contact Us</h2>
+        <p>
+            Email: hello@mywebsite.com<br>
+            Phone: +91 12345 67890
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2026 My Website. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
